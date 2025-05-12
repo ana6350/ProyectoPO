@@ -9,7 +9,7 @@
             },
             "properties":{
                 "PrecioDescuento":219900,
-                "Precio":267200.
+                "Precio":267200,
                 "Alto":25.8,
                 "Ancho":33.4,
                 "Profundidad":44,
@@ -19,26 +19,46 @@
                 "Voltaje": 110,
 
             }
-    ]
+    ],
     "features":[
         {
             "type":"Feature",
             "geometry":{
                 "type":"point",
-                "coordinates":[4.6185248,-74.1243713,14]
+                "coordinates":[4.6182089,-74.0754951,7]
             },
             "properties":{
-                "PrecioDescuento":219900,
-                "Precio":267200.
-                "Alto":25.8,
-                "Ancho":33.4,
-                "Profundidad":44,
+                "PrecioDescuento":399900,
+                "Precio":399900,
+                "Alto":28.10,
+                "Ancho":48.30,
+                "Profundidad":40.70,
                 "Capacidad":20,
-                "Modelo": "RMM-20",
-                "Potencia":700,
-                "Voltaje": 110,
+                "Modelo": "E09SEJ",
+                "Potencia":"No definido",
+                "Voltaje": 120,
 
             }
-    ]
+    ],
+    "features":[
+        {
+            "type":"Feature",
+            "geometry":{
+                "type":"point",
+                "coordinates":[4.6182089,-74.0754951,7]
+            },
+            "properties":{
+                "PrecioDescuento":399900,
+                "Precio":399900,
+                "Alto":28.10,
+                "Ancho":48.30,
+                "Profundidad":40.70,
+                "Capacidad":20,
+                "Modelo": "E09SEJ",
+                "Potencia":"No definido",
+                "Voltaje": 120,
+
+            }
+    ],
 
 }
