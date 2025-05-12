@@ -1,0 +1,44 @@
+{
+    "type":"FeatureColection",
+    "features":[
+        {
+            "type":"Feature",
+            "geometry":{
+                "type":"point",
+                "coordinates":[4.6185248,-74.1243713,14]
+            },
+            "properties":{
+                "PrecioDescuento":219900,
+                "Precio":267200.
+                "Alto":25.8,
+                "Ancho":33.4,
+                "Profundidad":44,
+                "Capacidad":20,
+                "Modelo": "RMM-20",
+                "Potencia":700,
+                "Voltaje": 110,
+
+            }
+    ]
+    "features":[
+        {
+            "type":"Feature",
+            "geometry":{
+                "type":"point",
+                "coordinates":[4.6185248,-74.1243713,14]
+            },
+            "properties":{
+                "PrecioDescuento":219900,
+                "Precio":267200.
+                "Alto":25.8,
+                "Ancho":33.4,
+                "Profundidad":44,
+                "Capacidad":20,
+                "Modelo": "RMM-20",
+                "Potencia":700,
+                "Voltaje": 110,
+
+            }
+    ]
+
+}
