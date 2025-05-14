@@ -5,3 +5,10 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 var marker = L.marker([4.6208079, -74.0721415,16]).addTo(map);
+marker.addTo(map);
+
+//Abrir el archivo de GeoJson
+// Javascript se ejecuta de tal manera que si una linea de codigo se demora, se pasa a la siguiente sin esperar
+
+var miArchvio= await fetch("microondad.geojson");
+

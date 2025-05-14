@@ -16,7 +16,7 @@
                 "Capacidad":20,
                 "Modelo": "RMM-20",
                 "Potencia":700,
-                "Voltaje": 110,
+                "Voltaje": 110
 
             }
         }
@@ -37,8 +37,7 @@
                 "Capacidad":20,
                 "Modelo": "E09SEJ",
                 "Potencia":"No definido",
-                "Voltaje": 120,
-
+                "Voltaje": 120
             }
         }
     ],
@@ -58,7 +57,7 @@
                 "Capacidad":21.33,
                 "Modelo": "K-MW07N ",
                 "Potencia":700,
-                "Voltaje": 110,
+                "Voltaje": 110
 
             }
         }
@@ -79,7 +78,7 @@
                 "Capacidad":"No definido",
                 "Modelo": "M07SEJ",
                 "Potencia":700,
-                "Voltaje": 110,
+                "Voltaje": 110
 
             }
         }
@@ -100,7 +99,7 @@
                 "Capacidad":21.33,
                 "Modelo": "WM1807D",
                 "Potencia":700,
-                "Voltaje": 110,
+                "Voltaje": 110
             }
         }            
      ],
@@ -120,7 +119,7 @@
                 "Capacidad":22,
                 "Modelo": "MMDF07S2MG",
                 "Potencia":700,
-                "Voltaje": 110,
+                "Voltaje": 110
 
             }
         }
@@ -141,7 +140,7 @@
                 "Capacidad":21.33,
                 "Modelo": "K-MW07N ",
                 "Potencia":700,
-                "Voltaje": 110,
+                "Voltaje": 110
             }
         }
      ], 
@@ -161,7 +160,7 @@
                 "Capacidad":20,
                 "Modelo": "WM1807D",
                 "Potencia":700,
-                "Voltaje": 110,
+                "Voltaje": 110
             }
         }
      ], 
@@ -181,7 +180,7 @@
                 "Capacidad":20,
                 "Modelo": "HM 8007 ",
                 "Potencia":1050,
-                "Voltaje": 120,
+                "Voltaje": 120
             }
         }
      ],
@@ -201,7 +200,7 @@
                 "Capacidad":"No definido",
                 "Modelo": "MGE07SEJ",
                 "Potencia":700,
-                "Voltaje": 110,
+                "Voltaje": 110
             }
         }
      ],
