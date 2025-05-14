@@ -10,5 +10,7 @@ marker.addTo(map);
 //Abrir el archivo de GeoJson
 // Javascript se ejecuta de tal manera que si una linea de codigo se demora, se pasa a la siguiente sin esperar
 
+async function CargarPuntos(){
 var miArchvio= await fetch("microondad.geojson");
-
+}
+CargarPuntos();
