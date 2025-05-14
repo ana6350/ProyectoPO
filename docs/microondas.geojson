@@ -20,8 +20,6 @@
 
             }
         },
-    ]
-    "features":[
         {
             "type":"Feature",
             "geometry":{
@@ -40,8 +38,7 @@
                 "Voltaje": 120
             }
         },
-    ]
-    "features":[
+    
         {
             "type":"Feature",
             "geometry":{
@@ -61,8 +58,7 @@
 
             }
         },
-    ]
-    "features":[
+    
         {
             "type":"Feature",
             "geometry":{
@@ -82,8 +78,7 @@
 
             }
         },
-    ]
-     "features":[
+    
         {
             "type":"Feature",
             "geometry":{
@@ -102,8 +97,7 @@
                 "Voltaje": 110
             }
         },  
-     ]
-     "features":[
+     
         {
             "type":"Feature",
             "geometry":{
@@ -123,8 +117,7 @@
 
             }
         },
-     ]
-    "features":[
+     
         {
             "type":"Feature",
             "geometry":{
@@ -143,8 +136,7 @@
                 "Voltaje": 110
             }
         },
-    ]
-     "features":[
+    
         {
             "type":"Feature",
             "geometry":{
@@ -163,8 +155,7 @@
                 "Voltaje": 110
             }
         },
-     ]
-     "features":[
+     
         {
             "type":"Feature",
             "geometry":{
@@ -183,8 +174,7 @@
                 "Voltaje": 120
             }
         },
-     ]
-     "features":[
+     
         {
             "type":"Feature",
             "geometry":{
@@ -202,7 +192,7 @@
                 "Potencia":700,
                 "Voltaje": 110
             }
-        },
+        }
      ]
 
 }
