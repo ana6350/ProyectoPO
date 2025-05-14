@@ -11,6 +11,20 @@ marker.addTo(map);
 // Javascript se ejecuta de tal manera que si una linea de codigo se demora, se pasa a la siguiente sin esperar
 
 async function CargarPuntos(){
-var miArchvio= await fetch("microondad.geojson");
+    var miArchvio= await fetch("microondad.geojson");
+    
+    //Convertir el archivo a Json: objeto js
+    var datos= await miArchvio.json();
+    //Obtener el arreglo  de la llavr features
+    let listaFeatures= datos["features"];
+    
+    for(int i =0; i<10; i++){
+    console.log(datos["features"][i]);
+    //Obtener la geometria del primer elemento
+    listaFeatures[i]["geometry"]["coordiantes"];
+    var miMarcador = L.marker(misCoordenadas);
+    marker.addTo(map);
+    }
+
 }
 CargarPuntos();
