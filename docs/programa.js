@@ -1,51 +1,32 @@
 var map = L.map('map').setView([4.6208079, -74.0721415], 13);
 
-// Añadir capa base de OpenStreetMap
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-// Marcador principal (opcional)
-var marker = L.marker([4.6208079, -74.0721415]).addTo(map);
-
-// Función para cargar los puntos desde el GeoJSON
 async function CargarPuntos() {
     try {
-        // Cargar archivo GeoJSON
-        var miArchivo = await fetch("microondad.geojson");
-        var datos = await miArchivo.json();
+        const response = await fetch("microondas.geojson");
+        const data = await response.json();
 
-        // Obtener el arreglo de features
-        let listaFeatures = datos.features;
-
-        for (let i = 0; i < listaFeatures.length; i++) {
-            let feature = listaFeatures[i];
-
-            // Obtener coordenadas (formato GeoJSON: [long, lat])
-            let coords = feature.geometry.coordinates;
-            let lat = coords[1];
-            let lng = coords[0];
-
-            // Crear marcador con popup
-            let miMarcador = L.marker([lat, lng]).addTo(map);
-
-            // Crear contenido del popup con propiedades del microondas
-            let props = feature.properties;
-            let popupContent = `
-                <b>Modelo:</b> ${props.Modelo}<br>
-                <b>Precio:</b> $${props.Precio}<br>
-                <b>Precio con Descuento:</b> $${props.PrecioDescuento}<br>
-                <b>Capacidad:</b> ${props.Capacidad}<br>
-                <b>Voltaje:</b> ${props.Voltaje}<br>
-                <b>Potencia:</b> ${props.Potencia}<br>
-                <b>Dimensiones (cm):</b> ${props.Alto} x ${props.Ancho} x ${props.Profundidad}
-            `;
-
-            miMarcador.bindPopup(popupContent);
-        }
+        L.geoJSON(data, {
+            onEachFeature: function (feature, layer) {
+                const props = feature.properties;
+                const popupContent = `
+                    <strong>Modelo:</strong> ${props.Modelo}<br>
+                    <strong>Precio:</strong> $${props.Precio}<br>
+                    <strong>Precio con Descuento:</strong> $${props.PrecioDescuento}<br>
+                    <strong>Dimensiones (Alto x Ancho x Profundidad):</strong> ${props.Alto} x ${props.Ancho} x ${props.Profundidad}<br>
+                    <strong>Capacidad:</strong> ${props.Capacidad}<br>
+                    <strong>Potencia:</strong> ${props.Potencia}<br>
+                    <strong>Voltaje:</strong> ${props.Voltaje}
+                `;
+                layer.bindPopup(popupContent);
+            }
+        }).addTo(map);
     } catch (error) {
-        console.error("Error al cargar el GeoJSON:", error);
+        console.error("Error al cargar el archivo GeoJSON:", error);
     }
 }
 
