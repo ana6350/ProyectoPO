@@ -43,7 +43,7 @@
             "type":"Feature",
             "geometry":{
                 "type":"point",
-                "coordinates":[4.6798383,-78.7001208,7]
+                "coordinates":[4.6798383,-74.7001208,7]
         },
             "properties":{
                 "PrecioDescuento":269900,
